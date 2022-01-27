@@ -1,11 +1,13 @@
 import tkinter as tk
 from constants import *
+import GUI.login as login
 
 class homepage:
     def __init__(self,currentFrame, newFrame, frames):
         # initiate the frame
         self.frame = frames
         currentFrame.forget()
+        print(newFrame)
         newFrame.pack(fill='both', expand=1)
         self.shown()
     
@@ -30,8 +32,8 @@ class homepage:
         logout = tk.Button(
             self.frame[1],
             text='Logout', 
-            command=lambda: home.loginPage(
-                self.frame[2], 
+            command=lambda: login.loginPage(
+                self.frame[1], 
                 self.frame[0], 
                 self.frame
                 )

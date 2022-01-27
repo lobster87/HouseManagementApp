@@ -98,7 +98,7 @@ class loginPage:
                 password,
                 [
                     self.frames[0],
-                    self.frames[2],
+                    self.frames[1],
                     self.frames
                 ]
                 )
