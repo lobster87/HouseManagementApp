@@ -1,6 +1,7 @@
 import tkinter as tk
 from turtle import width
 from constants import *
+import buttonFunctions.buttonFunctions as bf
 
 class loginPage:
     def __init__(self,currentFrame, newFrame, frames):
@@ -92,7 +93,7 @@ class loginPage:
         loginbutton = tk.Button(
             loginSection, 
             text='Login', 
-            command=lambda: functions.login(
+            command=lambda: bf.login(
                 user,
                 password,
                 [
@@ -106,18 +107,3 @@ class loginPage:
             width= butWidth,
             x=(windowWidth*0.5) - (titleWidth*0.5), 
             y=100)
-
-        createUserButt = tk.Button(
-            loginSection, 
-            text='Create User', 
-            command= lambda: createNewUser(
-                self.frames[0], 
-                self.frames[1], 
-                self.frames)
-            )
-
-        createUserButt.place(
-            width= butWidth, 
-            x=(windowWidth*0.5) - (titleWidth*0.5) + butWidth + 5, 
-            y=100
-        )
