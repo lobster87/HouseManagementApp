@@ -1,4 +1,5 @@
-
+from constants import *
+import tkinter as tk
 
 
 class houseMain:
@@ -9,4 +10,16 @@ class houseMain:
         self.shown()
     
     def shown(self):
-        pass
+        title = tk.Label(
+            self.frames[2], 
+            text="House",
+            font='30'
+            )
+
+        titleWidth = windowWidth
+        titlex = (windowWidth*0.5) - (titleWidth*0.5)
+        title.place(
+            width=titleWidth, 
+            x=titlex, 
+            y=50
+            )
