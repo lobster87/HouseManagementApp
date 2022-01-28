@@ -96,13 +96,10 @@ class loginPage:
             command=lambda: bf.login(
                 user,
                 password,
-                [
-                    self.frames[0],
-                    self.frames[1],
-                    self.frames
-                ]
+                self.frames
                 )
             )
+
         loginbutton.place(
             width= butWidth,
             x=(windowWidth*0.5) - (titleWidth*0.5), 

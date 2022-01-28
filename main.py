@@ -25,7 +25,7 @@ frames = [
     tk.Frame(window, bg='white'),
     tk.Frame(window, bg='white')
     ]
-
-login.loginPage(frames[0], frames[0], frames)
+    
+login.loginPage(frames[0], frames[0], frames[0:])
 
 window.mainloop()

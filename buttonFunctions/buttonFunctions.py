@@ -6,10 +6,10 @@ from GUI import homepage
 def login(username, password, frames):
     """ This function is to veryify login details """
     conn = mysql.connect(
-        host= "localhost",
-        user= os.environ.get("dbUser"),
-        password= os.environ.get("dbPass"),
-        database= "house"
+    host= "localhost",
+    user= os.environ.get("dbUser"),
+    password= os.environ.get("dbPass"),
+    database= "house"
     )
 
     cursor = conn.cursor()
